@@ -1,11 +1,16 @@
 html, body {
+    /* margin:0;
+    padding:0;
+    height:100%; */
     text-align: center;
+    background-color: #F4F4F4;
+    font-family: 'Exo 2', sans-serif;
 }
 #navbar {
     position: fixed;
     top: 10px;
     text-align: center;
-    background-color: white;
+    background-color: #F4F4F4;
     width: 500px;
     box-shadow: 5px 2.5px 2.5px black;
     margin-left: 400px;
@@ -17,19 +22,18 @@ nav ul li {
     padding-right: 40px; 
 }
 nav ul li:hover {
-    display: inline-block;
-    margin: 5px;
-    margin-top: 10px;
-    padding-right: 40px;
-    color: red; 
+   background-color: lightblue;
 }
 #navbar ul a {
+    text-decoration:none;
     color: black;
 }
-
+#navbar ul a:hover {
+    text-decoration:none;
+    color: black;
+}
 .centre-align {
     text-align: center;
-    font-family: "Montserrat", "Times";
     font-weight: 100;
     padding-top: 30vh;
     margin-bottom: 30vh;
@@ -39,26 +43,68 @@ nav ul li:hover {
     margin-right: 300px;
 }
 .container1 {
+    top: 0;
     height: 100%;
     width: 100%;
-    background-color: #F5F686;
-    background-blend-mode: lighten;
+    background-color: #C0B283;
     box-shadow: 3px 3px;
-    opacity: 0.8;
 }
 .container2 {
+    top: 0;
     height: 100%;
     width: 100%;
-    background-color: grey;
-    background-blend-mode: lighten;
+    background-color: #DCD0C0;
     box-shadow: 3px 3px;
-    opacity: 0.8;
 }
-.container2:hover {
+.container3 {
+    top: 0;
     height: 100%;
     width: 100%;
-    background-color: grey;
-    background-blend-mode: lighten;
+    background-color: #373737;
     box-shadow: 3px 3px;
-    opacity: 1.0;
+}
+.container3 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #373737;
+    box-shadow: 3px 3px;
+}
+#projects * {
+    color: white;
+}
+#projects img {
+    height: 150px;
+    width: 450px;
+}
+
+#about p {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    color: black;
+}
+.project-tile {
+    display: flex;
+    flex-direction: column;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-google {
+    background: #ea4335;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
