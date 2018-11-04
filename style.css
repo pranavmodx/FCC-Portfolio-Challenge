@@ -1,3 +1,64 @@
-h1 {
+html, body {
     text-align: center;
+}
+#navbar {
+    position: fixed;
+    top: 10px;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    box-shadow: 5px 2.5px 2.5px black;
+    margin-left: 400px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+    padding-right: 40px; 
+}
+nav ul li:hover {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+    padding-right: 40px;
+    color: red; 
+}
+#navbar ul a {
+    color: black;
+}
+
+.centre-align {
+    text-align: center;
+    font-family: "Montserrat", "Times";
+    font-weight: 100;
+    padding-top: 30vh;
+    margin-bottom: 30vh;
+}
+.justifier {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.container1 {
+    height: 100%;
+    width: 100%;
+    background-color: #F5F686;
+    background-blend-mode: lighten;
+    box-shadow: 3px 3px;
+    opacity: 0.8;
+}
+.container2 {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    background-blend-mode: lighten;
+    box-shadow: 3px 3px;
+    opacity: 0.8;
+}
+.container2:hover {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    background-blend-mode: lighten;
+    box-shadow: 3px 3px;
+    opacity: 1.0;
 }
