@@ -1,18 +1,18 @@
-html, body {
-    /* margin:0;
-    padding:0;
-    height:100%; */
+/* Applies to complete html */
+html {
     text-align: center;
     background-color: #F4F4F4;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif; 
 }
+
+/* Navigation Section */
 #navbar {
     position: fixed;
     top: 10px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #F4F4F4;
     width: 500px;
-    box-shadow: 5px 2.5px 2.5px black;
+    box-shadow: 5px 2.5px 2.5px  black;
     margin-left: 400px;
 }
 nav ul li {
@@ -33,62 +33,58 @@ nav ul li:hover {
     text-decoration:none;
     color: black;
 }
+/* End of Navigation Section */
+
+/* Welcome/Home Section */
 .centre-align {
-    text-align: center;
+    /* text-align: center; */
     font-weight: 100;
     padding-top: 30vh;
-    margin-bottom: 30vh;
+    padding-bottom: 30vh;
 }
-.justifier {
-    margin-left: 300px;
-    margin-right: 300px;
+/* End of Home Section */
+
+/* Main Content Section */
+.skin {
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px;
 }
 .container1 {
-    top: 0;
-    height: 100%;
-    width: 100%;
     background-color: #C0B283;
-    box-shadow: 3px 3px;
 }
 .container2 {
-    top: 0;
-    height: 100%;
-    width: 100%;
     background-color: #DCD0C0;
-    box-shadow: 3px 3px;
 }
 .container3 {
-    top: 0;
-    height: 100%;
-    width: 100%;
     background-color: #373737;
-    box-shadow: 3px 3px;
 }
 .container4 {
-    top: 0;
-    height: 100%;
-    width: 100%;
     background-color: lightgray;
-    box-shadow: 3px 3px;
 }
 #projects * {
     color: white;
 }
 #projects img {
-    height: 150px;
-    width: 450px;
+    height: "height";
+    width: "width";
 }
 
+/* Justifies paragraph tag in About Section */
 #about p {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
     text-align: justify;
     color: black;
 }
+
+/* Aligns Project Section using Flex */
 .project-tile {
     display: flex;
     flex-direction: column;
 }
+
+/* Font-awesome Icons and properties for Contact Section */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -108,4 +104,25 @@ nav ul li:hover {
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+/* Additional sizing and decorating properties */
+#about h1,#projects h1,#contact h1 {
+    font-size: 40px;
+}
+#home h1 {
+    font-size: 50px;
+}
+#home h2 {
+    font-size: 40px;
+}
+#home p {
+    font-size: 20px;
+    color:darkgreen;
+}
+#about h2 {
+    font-size: 30px;
+}
+#about ul {
+    list-style-type: none;
 }
