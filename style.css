@@ -114,7 +114,10 @@ nav ul li:hover {
     background: #55ACEE;
     color: white;
 }
-
+.fa-github {
+    background: #00405d;
+    color: white;
+}
 
 /* Additional sizing and decorating properties */
 #about h1,#projects h1,#contact h1 {
