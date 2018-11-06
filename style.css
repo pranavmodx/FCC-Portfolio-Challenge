@@ -5,6 +5,7 @@ html {
     font-family: 'Exo 2', sans-serif; 
 }
 
+
 /* Navigation Section */
 #navbar {
     position: fixed;
@@ -29,11 +30,8 @@ nav ul li:hover {
     color: black;
     font-size: 17px;
 }
-#navbar ul a:hover {
-    text-decoration:none;
-    color: black;
-}
 /* End of Navigation Section */
+
 
 /* Welcome/Home Section */
 .centre-align {
@@ -43,6 +41,7 @@ nav ul li:hover {
     padding-bottom: 30vh;
 }
 /* End of Home Section */
+
 
 /* Main Content Section */
 .skin {
@@ -68,21 +67,25 @@ nav ul li:hover {
 #projects img {
     height: "height";
     width: "width";
+    max-width:100%;
 }
+
 
 /* Justifies paragraph tag in About Section */
 #about p {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 300px;
+    margin-right: 300px;
     text-align: justify;
     color: black;
 }
+
 
 /* Aligns Project Section using Flex */
 .project-tile {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Font-awesome Icons and properties for Contact Section */
 .fa {
@@ -106,6 +109,7 @@ nav ul li:hover {
     color: white;
 }
 
+
 /* Additional sizing and decorating properties */
 #about h1,#projects h1,#contact h1 {
     font-size: 40px;
@@ -126,3 +130,24 @@ nav ul li:hover {
 #about ul {
     list-style-type: none;
 }
+
+
+/* Added responsiveness */
+@media only screen and (max-width: 768px){
+    #navbar {
+        /* display: none; */
+        margin-left: 8px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .skin{
+        width: "device-width";
+        /* width: 90%; */
+    }
+    #about p {
+        margin-left: 20px;
+        text-align: justify;
+        width: 90%;
+    }
+  }
