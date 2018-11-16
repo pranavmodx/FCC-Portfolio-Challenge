@@ -136,10 +136,10 @@ nav ul li:hover {
 #about h2 {
     font-size: 30px;
 }
-#about ul {
-    list-style-type: none;
+svg {
+    height: 100px;
+    width: 100px;
 }
-
 
 /* Added responsiveness */
 @media only screen and (max-width: 768px){
@@ -160,3 +160,4 @@ nav ul li:hover {
         width: 90%;
     }
   }
+
