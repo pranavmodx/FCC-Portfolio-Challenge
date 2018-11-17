@@ -17,10 +17,12 @@ html {
     position: fixed;
     top: 10px;
     /* text-align: center; */
+    background-image: url("bg-images/navbar.jpg");
+    background-size: cover;
     background-color: #F4F4F4;
     width: 500px;
     box-shadow: 5px 2.5px 2.5px  black;
-    margin-left: 400px;
+    margin-left: 375px;
 }
 nav ul li {
     display: inline-block;
@@ -56,15 +58,23 @@ nav ul li:hover {
     box-shadow: 3px 3px;
 }
 .container1 {
+    background-image: url("bg-images/home.jpg");
+    background-size: cover;
     background-color: #C0B283;
 }
 .container2 {
+    background-image: url("bg-images/aboutme.jpg");
+    background-size: cover;
     background-color: #DCD0C0;
 }
 .container3 {
+    background-image: url("bg-images/myprojects.jpg");
+    background-size: cover;
     background-color: #373737;
 }
 .container4 {
+    background-image: url("bg-images/contactme.jpg");
+    background-size: cover;
     background-color: lightgray;
 }
 #projects * {
@@ -83,6 +93,7 @@ nav ul li:hover {
     margin-right: 300px;
     text-align: justify;
     color: black;
+    font-size: 24px;
 }
 
 
@@ -119,18 +130,19 @@ nav ul li:hover {
     color: white;
 }
 
+
 /* Additional sizing and decorating properties */
 #about h1,#projects h1,#contact h1 {
     font-size: 40px;
 }
 #home h1 {
-    font-size: 50px;
+    font-size: 70px;
 }
 #home h2 {
-    font-size: 40px;
+    font-size: 60px;
 }
 #home p {
-    font-size: 20px;
+    font-size: 30px;
     color:darkgreen;
 }
 #about h2 {
@@ -141,18 +153,31 @@ svg {
     width: 100px;
 }
 
+
 /* Added responsiveness */
 @media only screen and (max-width: 768px){
     #navbar {
-        /* display: none; */
         margin-left: 8px;
         text-align: center;
         width: 90%;
     }
-
+    nav ul li {
+        display: inline-block;
+        margin: 0px;
+        margin-top: 0px;
+    }
     .skin{
         width: "device-width";
-        /* width: 90%; */
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+    #home h2 {
+        font-size: 40px;
+    }
+    #home p {
+        font-size: 20px;
+        color:darkgreen;
     }
     #about p {
         margin-left: 20px;
