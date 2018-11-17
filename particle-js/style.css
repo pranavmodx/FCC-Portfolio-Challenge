@@ -1,0 +1,208 @@
+/* Applies to complete html */
+html {
+    text-align: center;
+    background-color: #F4F4F4;
+    font-family: 'Exo 2', sans-serif; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+
+/* Navigation Section */
+#navbar {
+    position: fixed;
+    top: 10px;
+    /* text-align: center; */
+    background-image: url("bg-images/navbar.jpg");
+    background-size: cover;
+    background-color: #F4F4F4;
+    width: 500px;
+    box-shadow: 5px 2.5px 2.5px  black;
+    margin-left: 375px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+    padding-right: 40px; 
+}
+nav ul li:hover {
+   background-color: lightblue;
+}
+#navbar ul a {
+    text-decoration:none;
+    color: black;
+    font-size: 17px;
+}
+/* End of Navigation Section */
+
+
+/* Welcome/Home Section */
+.centre-align {
+    /* text-align: center; */
+    font-weight: 100;
+    /* padding-top: 30vh; */
+    /* padding-bottom: 30vh; */
+}
+/* End of Home Section */
+
+
+/* Main Content Section */
+.skin {
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px;
+}
+.container2 {
+    background-image: url("bg-images/aboutme2.jpg");
+    background-size: cover;
+    background-color: #DCD0C0;
+}
+.container3 {
+    background-image: url("bg-images/myprojects.jpg");
+    background-size: cover;
+    background-color: #373737;
+}
+.container4 {
+    background-image: url("bg-images/contactme.jpg");
+    background-size: cover;
+    background-color: lightgray;
+}
+#projects * {
+    color: white;
+}
+#projects img {
+    height: "height";
+    width: "width";
+    max-width:100%;
+}
+
+
+/* Justifies paragraph tag in About Section */
+#about p {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    color: black;
+    font-size: 24px;
+}
+
+
+/* Aligns Project Section using Flex */
+.project-tile {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Font-awesome Icons and properties for Contact Section */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-google {
+    background: #ea4335;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-github {
+    background: #00405d;
+    color: white;
+}
+
+#home {
+    position:absolute;
+    top: 150px;
+    left:250px;
+    z-index: 9999;
+}
+/* Additional sizing and decorating properties */
+#about h1,#projects h1,#contact h1 {
+    font-size: 40px;
+}
+#home h1 {
+    font-size: 70px;
+}
+#home h2 {
+    font-size: 60px;
+}
+#home p {
+    font-size: 30px;
+    color:darkgreen;
+}
+#about h2 {
+    font-size: 30px;
+}
+svg {
+    height: 100px;
+    width: 100px;
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Added responsiveness */
+@media only screen and (max-width: 768px){
+    #navbar {
+        margin-left: 8px;
+        text-align: center;
+        width: 90%;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0px;
+        margin-top: 0px;
+    }
+    .skin{
+        width: "device-width";
+    }
+    #home {
+        top: 0px;
+        left:0px;
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+    #home h2 {
+        font-size: 40px;
+    }
+    #home p {
+        font-size: 20px;
+        color:darkgreen;
+    }
+    #about p {
+        margin-left: 20px;
+        text-align: justify;
+        width: 90%;
+    }
+  }
