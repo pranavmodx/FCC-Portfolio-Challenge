@@ -11,6 +11,16 @@ html {
     left: 0;
 }
 
+#particles-js {
+    /* height: 100%;
+    width: 100%; */
+    height: 100%;
+    width: 100%;
+    background-image: url("bg-images/home.jpg");
+    background-size: cover;
+    background-color: #C0B283;
+}
+
 
 /* Navigation Section */
 #navbar {
@@ -45,18 +55,23 @@ nav ul li:hover {
 .centre-align {
     /* text-align: center; */
     font-weight: 100;
-    /* padding-top: 30vh; */
-    /* padding-bottom: 30vh; */
+    padding-top: 30vh;
+    padding-bottom: 30vh;
 }
 /* End of Home Section */
 
 
 /* Main Content Section */
-.skin {
+/* .skin {
     height: 100%;
     width: 100%;
     box-shadow: 3px 3px;
-}
+} */
+/* .container1 {
+    background-image: url("bg-images/home.jpg");
+    background-size: cover;
+    background-color: #C0B283;
+} */
 .container2 {
     background-image: url("bg-images/aboutme2.jpg");
     background-size: cover;
@@ -125,12 +140,7 @@ nav ul li:hover {
     color: white;
 }
 
-#home {
-    position:absolute;
-    top: 150px;
-    left:250px;
-    z-index: 9999;
-}
+
 /* Additional sizing and decorating properties */
 #about h1,#projects h1,#contact h1 {
     font-size: 40px;
@@ -154,23 +164,6 @@ svg {
 }
 
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    /* background-image: url(""); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Added responsiveness */
 @media only screen and (max-width: 768px){
     #navbar {
@@ -185,10 +178,6 @@ svg {
     }
     .skin{
         width: "device-width";
-    }
-    #home {
-        top: 0px;
-        left:0px;
     }
     #home h1 {
         font-size: 50px;
