@@ -1,2 +1,2 @@
 # Portfolio-Website
-A simple Portfolio Website made from scratch as part of FCC Challenge.
+A simple Portfolio Website made from scratch as part of FCC Challenge. (Fully Responsive)
